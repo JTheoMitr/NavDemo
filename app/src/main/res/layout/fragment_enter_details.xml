@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:hint="Mobile Number" >
+        android:hint="Name" >
 
         <EditText
             android:id="@+id/et_first_name"
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:hint="Name" >
+        android:hint="Mobile Numbere" >
 
         <EditText
             android:id="@+id/et_mobile"
