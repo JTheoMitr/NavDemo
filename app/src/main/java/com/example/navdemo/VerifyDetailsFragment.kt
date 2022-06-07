@@ -14,10 +14,6 @@ class VerifyDetailsFragment : Fragment() {
     private val binding get() = _binding!!
 
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,9 +24,6 @@ class VerifyDetailsFragment : Fragment() {
         val name = arguments?.getString("name")
         val mobileNumber = arguments?.getLong("mobile")
 
-//        val rootView = inflater.inflate(R.layout.fragment_verify_details, container, false)
-//        val tvName = rootView.findViewById<TextView>(R.id.tv_name)
-//        val tvMobileNumber = rootView.findViewById<TextView>(R.id.tv_mobile_number)
 
         binding.tvName.text = name
         binding.tvMobileNumber.text = mobileNumber.toString()
