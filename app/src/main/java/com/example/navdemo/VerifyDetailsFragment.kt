@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.navigation.fragment.navArgs
 import com.example.navdemo.databinding.FragmentVerifyDetailsBinding
 
 class VerifyDetailsFragment : Fragment() {
@@ -21,9 +22,12 @@ class VerifyDetailsFragment : Fragment() {
 
         _binding = FragmentVerifyDetailsBinding.inflate(inflater, container, false)
 
-        val name = arguments?.getString("name")
-        val mobileNumber = arguments?.getLong("mobile")
+//        val name = arguments?.getString("name")
+//        val mobileNumber = arguments?.getLong("mobile")
 
+        val args : VerifyDetailsFragmentArgs by navArgs()
+        val name = args.name
+        val mobileNumber = args.mobile
 
         binding.tvName.text = name
         binding.tvMobileNumber.text = mobileNumber.toString()

@@ -37,12 +37,12 @@ class EnterDetailsFragment : Fragment() {
                     Toast.makeText(activity, "Enter Mobile Number", Toast.LENGTH_LONG).show()
                 }
                 else -> {
-                    val bundle = bundleOf(
-                        "name" to firstName,
-                        "mobile" to mobile.toLong()
+
+                    findNavController().navigate(
+                        EnterDetailsFragmentDirections
+                            .actionEnterDetailsFragmentToVerifyDetailsFragment(firstName, mobile.toLong())
                     )
 
-                    findNavController().navigate(R.id.action_enterDetailsFragment_to_verifyDetailsFragment, bundle)
                 }
             }
         }
